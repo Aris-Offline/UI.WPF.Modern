@@ -1,10 +1,12 @@
-name: Build and Deploy
+name: Build Controls & Gallery
+
+# This workflow builds the iNKORE.UI.WPF.Modern.Controls and iNKORE.UI.WPF.Modern.Gallery projects and uploads the artifacts for use in other workflows or releases.
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [  ]
   pull_request:
-    branches: [ main, master ]
+    branches: [  ]
   workflow_dispatch:
 
 jobs:
@@ -45,6 +47,3 @@ jobs:
       with:
         name: iNKORE.UI.WPF.Modern.Gallery
         path: source\iNKORE.UI.WPF.Modern.Gallery\bin\Release\net6.0-windows10.0.18362.0
-
-    - name: List output directory
-      run: dir source\iNKORE.UI.WPF.Modern.Controls\bin\Release\ /s
