@@ -35,13 +35,13 @@ jobs:
         msbuild iNKORE.UI.WPF.Modern.sln /p:Configuration=Release /p:Platform="Any CPU"
 
     - name: Upload Controls artifact (.NET 6.0)
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: iNKORE.UI.WPF.Modern.Controls
         path: source\iNKORE.UI.WPF.Modern.Controls\bin\Debug\net6.0-windows10.0.18362.0
 
     - name: Upload Gallery artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: iNKORE.UI.WPF.Modern.Gallery
         path: source\iNKORE.UI.WPF.Modern.Gallery\bin\Debug\net6.0-windows10.0.18362.0
