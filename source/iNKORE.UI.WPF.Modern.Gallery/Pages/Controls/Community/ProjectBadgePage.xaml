@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:iNKORE.UI.WPF.Modern.Gallery.Pages.Controls.Community"
     xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern"
+    xmlns:galleryControls="clr-namespace:iNKORE.UI.WPF.Modern.Gallery"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
     mc:Ignorable="d"
     d:DesignHeight="450" d:DesignWidth="800"
@@ -16,16 +17,16 @@
                 <TextBlock Text="ProjectBadge Examples" Style="{StaticResource TitleTextBlockStyle}" Margin="12"/>
 
                 <!-- Default ProjectBadge -->
-                <ui:ControlExample HeaderText="Default ProjectBadge">
-                    <ui:ControlExample.Example>
+                <galleryControls:ControlExample HeaderText="Default ProjectBadge">
+                    <galleryControls:ControlExample.Example>
                         <StackPanel Orientation="Horizontal">
                             <ui:ProjectBadge />
                             <ui:ProjectBadge Margin="5,0,0,0" Name="ProjectBadgeWithContent">
                                 <TextBlock Text="Project Content" />
                             </ui:ProjectBadge>
                         </StackPanel>
-                    </ui:ControlExample.Example>
-                    <ui:ControlExample.Xaml>
+                    </galleryControls:ControlExample.Example>
+                    <galleryControls:ControlExample.Xaml>
                         <sys:String>
                             <![CDATA[
 <ui:ProjectBadge />
@@ -34,12 +35,12 @@
 </ui:ProjectBadge>
                             ]]>
                         </sys:String>
-                    </ui:ControlExample.Xaml>
-                </ui:ControlExample>
+                    </galleryControls:ControlExample.Xaml>
+                </galleryControls:ControlExample>
 
                 <!-- ProjectBadge with different statuses -->
-                <ui:ControlExample HeaderText="ProjectBadge with different statuses">
-                    <ui:ControlExample.Example>
+                <galleryControls:ControlExample HeaderText="ProjectBadge with different statuses">
+                    <galleryControls:ControlExample.Example>
                         <StackPanel Orientation="Horizontal">
                             <ui:ProjectBadge Glyph="" Status="Success" />
                             <ui:ProjectBadge Glyph="" Status="Warning" Margin="5,0,0,0" />
@@ -48,8 +49,8 @@
                             <ui:ProjectBadge Glyph="" Status="Informational" Margin="5,0,0,0" />
                             <ui:ProjectBadge Glyph="" Status="Neutral" Margin="5,0,0,0" />
                         </StackPanel>
-                    </ui:ControlExample.Example>
-                    <ui:ControlExample.Xaml>
+                    </galleryControls:ControlExample.Example>
+                    <galleryControls:ControlExample.Xaml>
                         <sys:String>
                             <![CDATA[
 <ui:ProjectBadge Glyph="" Status="Success" />
@@ -60,20 +61,20 @@
 <ui:ProjectBadge Glyph="" Status="Neutral" />
                             ]]>
                         </sys:String>
-                    </ui:ControlExample.Xaml>
-                </ui:ControlExample>
+                    </galleryControls:ControlExample.Xaml>
+                </galleryControls:ControlExample>
 
                 <!-- ProjectBadge with custom content -->
-                <ui:ControlExample HeaderText="ProjectBadge with custom content">
-                    <ui:ControlExample.Example>
+                <galleryControls:ControlExample HeaderText="ProjectBadge with custom content">
+                    <galleryControls:ControlExample.Example>
                         <ui:ProjectBadge>
                             <StackPanel Orientation="Horizontal">
                                 <ui:SymbolIcon Symbol="Home"/>
                                 <TextBlock Text="Custom Text" Margin="5,0,0,0"/>
                             </StackPanel>
                         </ui:ProjectBadge>
-                    </ui:ControlExample.Example>
-                    <ui:ControlExample.Xaml>
+                    </galleryControls:ControlExample.Example>
+                    <galleryControls:ControlExample.Xaml>
                         <sys:String>
                             <![CDATA[
 <ui:ProjectBadge>
@@ -84,8 +85,8 @@
 </ui:ProjectBadge>
                             ]]>
                         </sys:String>
-                    </ui:ControlExample.Xaml>
-                </ui:ControlExample>
+                    </galleryControls:ControlExample.Xaml>
+                </galleryControls:ControlExample>
 
             </StackPanel>
         </ScrollViewer>

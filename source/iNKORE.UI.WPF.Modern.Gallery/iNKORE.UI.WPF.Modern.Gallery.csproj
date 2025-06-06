@@ -6,6 +6,7 @@
     <UseWPF>true</UseWPF>
 	  <ApplicationIcon>..\..\assets\icons\WpfLibrary.ico</ApplicationIcon>
 	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
 
   </PropertyGroup>
     
