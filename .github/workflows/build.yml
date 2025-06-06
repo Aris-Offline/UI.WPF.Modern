@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-
+    
     steps:
     - uses: actions/checkout@v3
       with:
@@ -39,7 +39,7 @@ jobs:
     - name: Upload Controls artifact (.NET 6.0)
       uses: actions/upload-artifact@v4
       with:
-        name: iNKORE.UI.WPF.Modern.Controls
+        name: iNKORE.UI.WPF.Modern.Controls  
         path: source\iNKORE.UI.WPF.Modern.Controls\bin\Release\net6.0-windows10.0.18362.0
 
     - name: Upload Gallery artifact
