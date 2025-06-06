@@ -1,0 +1,93 @@
+<Page
+    x:Class="iNKORE.UI.WPF.Modern.Gallery.Pages.Controls.Community.ProjectBadgePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:iNKORE.UI.WPF.Modern.Gallery.Pages.Controls.Community"
+    xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    mc:Ignorable="d"
+    d:DesignHeight="450" d:DesignWidth="800"
+    Title="ProjectBadgePage">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Text="ProjectBadge Examples" Style="{StaticResource TitleTextBlockStyle}" Margin="12"/>
+
+                <!-- Default ProjectBadge -->
+                <ui:ControlExample HeaderText="Default ProjectBadge">
+                    <ui:ControlExample.Example>
+                        <StackPanel Orientation="Horizontal">
+                            <ui:ProjectBadge />
+                            <ui:ProjectBadge Margin="5,0,0,0" Name="ProjectBadgeWithContent">
+                                <TextBlock Text="Project Content" />
+                            </ui:ProjectBadge>
+                        </StackPanel>
+                    </ui:ControlExample.Example>
+                    <ui:ControlExample.Xaml>
+                        <sys:String>
+                            <![CDATA[
+<ui:ProjectBadge />
+<ui:ProjectBadge>
+    <TextBlock Text="Project Content" />
+</ui:ProjectBadge>
+                            ]]>
+                        </sys:String>
+                    </ui:ControlExample.Xaml>
+                </ui:ControlExample>
+
+                <!-- ProjectBadge with different statuses -->
+                <ui:ControlExample HeaderText="ProjectBadge with different statuses">
+                    <ui:ControlExample.Example>
+                        <StackPanel Orientation="Horizontal">
+                            <ui:ProjectBadge Glyph="" Status="Success" />
+                            <ui:ProjectBadge Glyph="" Status="Warning" Margin="5,0,0,0" />
+                            <ui:ProjectBadge Glyph="" Status="Critical" Margin="5,0,0,0" />
+                            <ui:ProjectBadge Glyph="" Status="Attention" Margin="5,0,0,0" />
+                            <ui:ProjectBadge Glyph="" Status="Informational" Margin="5,0,0,0" />
+                            <ui:ProjectBadge Glyph="" Status="Neutral" Margin="5,0,0,0" />
+                        </StackPanel>
+                    </ui:ControlExample.Example>
+                    <ui:ControlExample.Xaml>
+                        <sys:String>
+                            <![CDATA[
+<ui:ProjectBadge Glyph="" Status="Success" />
+<ui:ProjectBadge Glyph="" Status="Warning" />
+<ui:ProjectBadge Glyph="" Status="Critical" />
+<ui:ProjectBadge Glyph="" Status="Attention" />
+<ui:ProjectBadge Glyph="" Status="Informational" />
+<ui:ProjectBadge Glyph="" Status="Neutral" />
+                            ]]>
+                        </sys:String>
+                    </ui:ControlExample.Xaml>
+                </ui:ControlExample>
+
+                <!-- ProjectBadge with custom content -->
+                <ui:ControlExample HeaderText="ProjectBadge with custom content">
+                    <ui:ControlExample.Example>
+                        <ui:ProjectBadge>
+                            <StackPanel Orientation="Horizontal">
+                                <ui:SymbolIcon Symbol="Home"/>
+                                <TextBlock Text="Custom Text" Margin="5,0,0,0"/>
+                            </StackPanel>
+                        </ui:ProjectBadge>
+                    </ui:ControlExample.Example>
+                    <ui:ControlExample.Xaml>
+                        <sys:String>
+                            <![CDATA[
+<ui:ProjectBadge>
+    <StackPanel Orientation="Horizontal">
+        <ui:SymbolIcon Symbol="Home"/>
+        <TextBlock Text="Custom Text" Margin="5,0,0,0"/>
+    </StackPanel>
+</ui:ProjectBadge>
+                            ]]>
+                        </sys:String>
+                    </ui:ControlExample.Xaml>
+                </ui:ControlExample>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

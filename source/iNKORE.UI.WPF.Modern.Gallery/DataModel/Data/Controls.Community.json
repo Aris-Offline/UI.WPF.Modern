@@ -101,7 +101,21 @@
             "Subtitle": "",
             "ImagePath": "",
             "ImageIconPath": "",
-            "Description": ""
+            "Description": "",
+            "Items":
+            [
+                {
+                    "UniqueId": "ProjectBadge",
+                    "Title": "ProjectBadge",
+                    "Subtitle": "A control that displays a project's status with a glyph and optional text.",
+                    "ImagePath": "ms-appx:///Assets/ControlImages/ProjectBadge.png",
+                    "ImageIconPath": "ms-appx:///Assets/ControlIcons/ProjectBadgeIcon.png",
+                    "Description": "ProjectBadge is a control that provides a visual indicator for project status. It can display a glyph and text, and supports different status levels like Success, Warning, Critical, etc.",
+                    "IsNew": true,
+                    "Docs": [],
+                    "RelatedControls": []
+                }
+            ]
         },
         {
             "UniqueId": "Text",
